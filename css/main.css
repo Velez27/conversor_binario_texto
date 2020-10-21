@@ -81,7 +81,7 @@ html{
     text-align: justify;
 }
 
-#copy_text, #copy_binary{
+#copy_text, #copy_binary, #clean_text, #clean_binary{
     background-color: var(--secundary-color);
     color: var(--footer-color);
     width: 5rem;
@@ -92,7 +92,7 @@ html{
     border: .2rem solid var(--footer-color);
 }
 
-#copy_text:hover, #copy_binary:hover{
+#copy_text:hover, #copy_binary:hover, #clean_text:hover, #clean_binary:hover{
     color: var(--body-color);
     background-color: var(--footer-color);
     border: .2rem solid var(--body-color);

@@ -3,6 +3,8 @@ let inputTextBinary = document.getElementById('text_binary');
 let buttonTranslate = document.getElementById('translate');
 let buttonCopyText = document.getElementById('copy_text');
 let buttonCopyBinary = document.getElementById('copy_binary');
+let buttonCleanText = document.getElementById('clean_text');
+let buttonCleanBinary = document.getElementById('clean_binary');
 
 function translateToBinary(text){
     let potencyArray = [128, 64, 32, 16, 8, 4, 2, 1];
@@ -89,4 +91,12 @@ buttonTranslate.addEventListener('click', () => {
     if(inputTextBinary.value){
         inputTextHuman.value = translateToText(inputTextBinary.value);
     }
+});
+
+buttonCleanText.addEventListener('click', () => {
+    inputTextHuman.value = '';
+});
+
+buttonCleanBinary.addEventListener('click', () => {
+    inputTextBinary.value = '';
 });
