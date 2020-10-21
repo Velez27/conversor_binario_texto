@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor Binario a Texto</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body class="container">
     <header class="header">
-
+        <h1>Conversor de Texto a Codigo Binario</h1>
     </header>
     <main class="main">
         <section>
             <form action="">
                 <label for="text_human">
                     <span>Escribe tu texto: </span>
+                    <button id="copy_text" title="Boton Copy Text" ><img src="./img/icono_copy.png" alt="Boton Para Copiar Texto"></button>
                     <input id="text_human" type="text">
+                    
                 </label>
                 <label for="text_binary">
-                    <span>Resultado</span>
+                    <span>Escribe tu codigo binario: </span>
+                    <button id="copy_binary" title="Boton Copy Binary"><img src="./img/icono_copy.png" alt="Boton Para Copiar Binario"></button>
                     <input id="text_binary" type="text">
+                    
                 </label>
             </form>
-            
         </section>
-        <button id="translate">Traducir</button>
+        <button id="translate" title="Boton Para Convertir Texto a Binario">Convertir</button>
     </main>
     <footer class="footer">
-        
+        <h3>Copyright - Nada que hacer</h3>
     </footer>
     <script src="./js/app.js"></script>
 </body>
