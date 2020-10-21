@@ -15,13 +15,15 @@ html{
     font-size: 62.5%;
 }
 .container{
+    width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--body-color);
     font-size: 1.6rem;
     margin: .2rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6rem 1fr 6rem;
+    grid-template-rows: 6vw 1fr 6vh;
     grid-template-areas: "header"
                          "main"
                          "footer";
