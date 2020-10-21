@@ -13,19 +13,16 @@
     </header>
     <main class="main">
         <section>
-            <form action="">
-                <label for="text_human">
-                    <span>Escribe tu texto: </span>
-                    <button id="copy_text" title="Boton Copy Text" ><img src="./img/icono_copy.png" alt="Boton Para Copiar Texto"></button>
-                    <input id="text_human" type="text">
-                    
-                </label>
-                <label for="text_binary">
-                    <span>Escribe tu codigo binario: </span>
-                    <button id="copy_binary" title="Boton Copy Binary"><img src="./img/icono_copy.png" alt="Boton Para Copiar Binario"></button>
-                    <input id="text_binary" type="text">
-                    
-                </label>
+            <div>
+                <span>Escribe tu texto: </span>
+                <button id="copy_text" title="Boton Copy Text">Copy</button>
+            </div>
+            <textarea name="" id="text_human" cols="30" rows="10"></textarea>
+            <div>
+                <span>Escribe tu codigo binario: </span>
+                <button id="copy_binary" title="Boton Copy Binary">Copy</button>
+            </div>
+            <textarea name="" id="text_binary" cols="30" rows="10"></textarea>
             </form>
         </section>
         <button id="translate" title="Boton Para Convertir Texto a Binario">Convertir</button>

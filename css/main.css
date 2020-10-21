@@ -55,6 +55,7 @@ html{
     background-color: var(--primary-color);
     grid-area: main;
     display: grid;
+    gap: 1rem;
     padding: 2rem;
     justify-content: center;
 }
@@ -65,9 +66,10 @@ html{
     border-radius: 1rem;
     border-style: none;
     outline-style: none;
+    padding: .4rem;
 }
 
-.main form{
+.main section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -75,13 +77,43 @@ html{
 
 .main input {
     display: block;
+    margin-top: 1rem;
+    text-align: justify;
 }
 
 #copy_text, #copy_binary{
-    border: none;
+    background-color: var(--secundary-color);
+    color: var(--footer-color);
     width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .6rem;
+    border: .2rem solid var(--footer-color);
+}
+
+#copy_text:hover, #copy_binary:hover{
+    color: var(--body-color);
+    background-color: var(--footer-color);
+    border: .2rem solid var(--body-color);
+}
+
+#translate{
+    margin: 0 auto;
+    background-color: var(--secundary-color);
+    color: var(--footer-color);
+    width: 10rem;
     height: 4rem;
     cursor: pointer;
+    text-decoration: none;
+    border-radius: .6rem;
+    border: .2rem solid var(--footer-color);
+}
+
+#translate:hover{
+    color: var(--body-color);
+    background-color: var(--footer-color);
+    border: .2rem solid var(--body-color);
 }
 
 .footer{
