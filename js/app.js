@@ -5,6 +5,8 @@ let buttonCopyText = document.getElementById('copy_text');
 let buttonCopyBinary = document.getElementById('copy_binary');
 let buttonCleanText = document.getElementById('clean_text');
 let buttonCleanBinary = document.getElementById('clean_binary');
+let buttonPasteText = document.getElementById('paste_text');
+let buttonPasteBinary = document.getElementById('paste_binary');
 
 function translateToBinary(text){
     let potencyArray = [128, 64, 32, 16, 8, 4, 2, 1];
@@ -69,7 +71,7 @@ function copyText(aux){
         inputTextBinary.select();
     }
     try{
-        let resultado = document.execCommand('copy');
+        document.execCommand('copy');
     }catch(err){
         console.error(err);
     }
@@ -99,4 +101,12 @@ buttonCleanText.addEventListener('click', () => {
 
 buttonCleanBinary.addEventListener('click', () => {
     inputTextBinary.value = '';
+});
+
+buttonPasteText.addEventListener('click', () => {
+    pasteText(true);
+});
+
+buttonPasteBinary.addEventListener('click', () => {
+    pasteText(false);
 });
