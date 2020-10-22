@@ -77,6 +77,20 @@ function copyText(aux){
     }
 }
 
+function pasteText(aux){
+    if (aux){
+        inputTextHuman.value = '';
+        navigator.clipboard.readText().then((text) =>{
+            inputTextHuman.value = text;
+        });
+    }else{
+        inputTextBinary.value = '';
+        navigator.clipboard.readText().then((text) => {
+            inputTextBinary.value = text;
+        });
+    }
+}
+
 buttonCopyText.addEventListener('click', () => {
     copyText(true);
 });
