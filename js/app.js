@@ -101,12 +101,16 @@ buttonCopyBinary.addEventListener('click', () => {
 
 
 buttonTranslate.addEventListener('click', () => {
-    if(inputTextHuman.value){
-        inputTextBinary.value = translateToBinary(inputTextHuman.value);
-    }
-    if(inputTextBinary.value){
+    let textToBinary = translateToBinary(inputTextHuman.value);
+    let textToHuman = translateToText(inputTextBinary.value);
+
+    if(((textToBinary.length + 1) / 9) <= (textToHuman.length + 1 )){
         inputTextHuman.value = translateToText(inputTextBinary.value);
     }
+    if(((textToBinary.length + 1) / 9) >= (textToHuman.length + 1 )){
+        inputTextBinary.value = translateToBinary(inputTextHuman.value);
+    }
+    
 });
 
 buttonCleanText.addEventListener('click', () => {
